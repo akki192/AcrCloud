@@ -11,10 +11,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 import com.acrcloud.utils.ACRCloudRecognizer;
-import com.acrcloud.utils.ACRCloudExtrTool;
 import com.google.gson.Gson;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 public class ACRAudioAndVideoRecognition {
