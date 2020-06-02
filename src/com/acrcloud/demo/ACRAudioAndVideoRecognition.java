@@ -87,7 +87,6 @@ public class ACRAudioAndVideoRecognition {
                         if (START == 0 && STOP == 0) {
                             TotalDuration = re.getFileDurationMS(file.toString());
                             STOP = (TotalDuration / 1000) % 60;
-                            System.out.println("TotalDuration=" + STOP);
                         }
                         helper.recognizeByFile(START, STOP, INTERVAL, config, file);
                         STOP = 0;
