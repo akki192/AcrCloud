@@ -96,8 +96,8 @@ public class ACRAudioAndVideoRecognition {
             }
         }
 
-        String Matching_Fppp_Files = new Gson().toJson(results);
-        System.out.println("Matching_Fp_Files:" + Matching_Fppp_Files);
+        String Matching_Fp_Files = new Gson().toJson(results);
+        System.out.println("Matching_Fp_Files:" + Matching_Fp_Files);
     }
 
 }
