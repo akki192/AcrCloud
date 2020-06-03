@@ -52,7 +52,7 @@ public class ACRAudioAndVideoRecognition {
         System.out.printf("Enter STOP Seconds or ZERO:  ");
         STOP = in.nextInt();
 
-        File folder = new File("D:/ACRTest/FileScan/");
+        File folder = new File("D:/ACRTest/AcrCloud/AcrCloud/src/com/acrcloud/FileScan");
         File[] listOfFiles = folder.listFiles();
         for (File file : listOfFiles) {
             if (file.isFile()) {
@@ -88,7 +88,7 @@ public class ACRAudioAndVideoRecognition {
                             TotalDuration = re.getFileDurationMS(file.toString());
                             STOP = (TotalDuration / 1000) % 60;
                         }
-                        helper.recognizeByFile(START, STOP, INTERVAL, config, file);
+                        results= helper.recognizeByFile(START, STOP, INTERVAL, config, file);
                         STOP = 0;
                         START = 0;
                     }
