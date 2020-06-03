@@ -52,7 +52,7 @@ public class ACRAudioAndVideoRecognition {
         System.out.printf("Enter STOP Seconds or ZERO:  ");
         STOP = in.nextInt();
 
-        File folder = new File("D:/ACRTest/AcrCloud/AcrCloud/src/com/acrcloud/FileScan");
+        File folder = new File("D:/ACRTest/AcrCloud/AcrCloud/FileScan");
         File[] listOfFiles = folder.listFiles();
         for (File file : listOfFiles) {
             if (file.isFile()) {
